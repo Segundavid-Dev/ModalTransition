@@ -1,4 +1,4 @@
-"use strict";
+// "use strict";
 // open modal
 const showModal = (openButton, modalContent) => {
   const openBtn = document.getElementById(openButton);
@@ -25,4 +25,9 @@ closeModal.forEach((button) => {
   });
 });
 
-//
+// close modal by clicking on escape key
+document.addEventListener("keydown", function (e) {
+  if (e.key === "Escape") {
+    modalContainer.classList.remove("show-modal");
+  }
+});
