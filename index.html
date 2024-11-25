@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Popup Animation</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <!-- BOXICON -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"
+    />
+  </head>
+  <body>
+    <section class="modal container">
+      <button class="modal__button" id="open-modal">Open Modal</button>
+
+      <div class="modal__container" id="modal-container">
+        <div class="modal__content">
+          <div class="modal__close" title="Close">
+            <i class="bx bx-x"></i>
+          </div>
+
+          <img
+            src="./assets/images/star-trophy.png"
+            alt="modal image"
+            class="modal__img"
+          />
+          <h1 class="modal__title">Good Job!</h1>
+          <p class="modal__description">Click the button to close</p>
+
+          <buttton class="modal__buttton modal__button-width">
+            View Status
+          </buttton>
+
+          <button class="modal__button-link">Close</button>
+        </div>
+      </div>
+    </section>
+    <!-- JAVASCRIPT -->
+    <script src="assets/js/scripts.js"></script>
+  </body>
+</html>
