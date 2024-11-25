@@ -152,3 +152,12 @@ img {
   color: var(--first-color);
   font-weight: 500;
 }
+
+.show-modal {
+  visibility: visible;
+  opacity: 1;
+}
+
+.show-modal .modal__content {
+  transform: translateY(0);
+}

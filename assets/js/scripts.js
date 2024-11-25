@@ -1,3 +1,5 @@
+"use strict";
+// open modal
 const showModal = (openButton, modalContent) => {
   const openBtn = document.getElementById(openButton);
   const modalContainer = document.getElementById(modalContent);
@@ -11,3 +13,16 @@ const showModal = (openButton, modalContent) => {
 
 // call function
 showModal("open-modal", "modal-container");
+
+// close modal
+const closeModal = document.querySelectorAll(".close-modal");
+const modalContainer = document.getElementById("modal-container");
+
+// iterate over each Nodelist
+closeModal.forEach((button) => {
+  button.addEventListener("click", () => {
+    modalContainer.classList.remove("show-modal");
+  });
+});
+
+//
